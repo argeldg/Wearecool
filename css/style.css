@@ -1,0 +1,95 @@
+/*Generales*/
+* {
+    margin: 2%;
+    padding: 0;
+
+}
+
+h1 {
+    font-size: 128px;
+}
+
+h2{
+    font-size: 65px;
+}
+
+h3{
+    font-size: 48.83px;
+}
+
+h4{ font-size: 39.06px;}
+
+h5{ font-size: 31.25px;}
+
+h6 { font-size: 25px
+
+}
+
+p{
+    font-size: 20px;
+    margin: 20px;
+}
+
+body { 
+    font-family: 'Sora', sans-serif;
+    background-color: black;
+    color: white; /* Cambiar el color del texto para asegurarse de que sea legible en el fondo negro */}
+
+
+/* boton*/
+
+.custom-button {
+   font-family: 'Sora', sans-serif;;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición para el estado hover */
+    border-radius: 30px; /* Esquinas redondeadas */
+    min-width: 150px; /* Ancho mínimo del botón */
+}
+
+.custom-button:hover {
+    background-color: #0325FF;
+    border: 2px solid #0325FF;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20vh; /* Centra verticalmente en la pantalla */
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-right: 5%; /* Separación proporcional */
+    vertical-align: top;
+    border: 1px solid white;
+    position: relative;
+}
+
+.square span {
+    display: block;
+    margin-top: 5px;
+}
+
+.black-square {
+    background-color: #000;
+}
+
+.white-square {
+    background-color: #fff;
+  
+}
+
+.blue-square {
+    background-color: #0325FF;
+    border: 0px;
+}
