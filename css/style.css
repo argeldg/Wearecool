@@ -19,7 +19,7 @@ p {margin-bottom: 1rem;}
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
   font-family: 'Sora', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.3;
 }
 
@@ -42,11 +42,9 @@ small, .text_small {font-size: 0.8rem;}
 /*display text*/
 .display-text {
     font-family: 'Sora', sans-serif;
-    font-size: 3.815rem;
+    font-size: 5rem;
     color: #ffffff;
-    letter-spacing: 2px; /* Espaciado entre letras personalizable */
-    text-align: center; /* Alineación del texto (center, left, right, etc.) */
-}
+  }
 
 button{
     color: #fff;
@@ -71,4 +69,152 @@ button:hover{
     background-color: #0325ff;
     color: #ffffff;
     border: solid 2px #0325ff;
+  }
+
+ /*Efecto burbuja*/
+
+.container-bubble {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+
+  background-image:url(../images/bubble-1.svg);
+  background-repeat: no-repeat;
+  background-position: center  ;
+  background-size: 90vh; 
+}
+
+@media (max-width: 433px) {
+  .container-bubble {
+    background-size: cover;
+  }
+}
+
+.hello{
+  align-content: center;
+}
+
+.image-not-focus {
+
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+}
+
+.image-not-focus--left {
+  left: 4%;
+}
+
+.image-not-focus--right {
+  right:10vh;
+  top: 10vh
+}
+
+#bubble1 {
+  position: absolute;
+  transition: left 0.2s ease-in-out, top 0.25s ease-in-out;
+}
+#bubble2 {
+  position: absolute;
+  transition: left 0.2s ease-in-out, top 0.25s ease-in-out;
+}
+
+.animate__animated {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+
+/*descrition section*/
+
+#description{
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  background-image: url(../images/bg-elipse.png);
+  background-position:bottom center;
+  background-repeat: no-repeat;
+}
+
+.i-work{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.services{
+  padding-bottom: 7vh;
+}
+
+/*Portafolio*/
+
+.indice-button{
+  font-size: 3.5rem;
+  font-family: 'Sora', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilo para las imágenes (inicialmente ocultas) */
+.imagen-hover {
+  display: none;
+  position: absolute ;
+  top:20px;
+  left: 35%;
+  width: 40%;
+  height: 40%;
+  z-index: -1;
+}
+
+/* Estilo para cada enlace del índice */
+.indice-link {
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 2rem;
+  opacity: 75%;
+  transition: all 0.3s ease; 
+  z-index: 2;/* Transición suave al hacer hover */
+  padding-left: 10%;
+}
+
+.indice-link:hover a{
+  color:white;
+}
+
+.indice-link:hover .imagen-hover {
+  display: block;
+}
+
+/* Estilo para resaltar el enlace al hacer hover */
+.indice-link:hover {
+  transform: translateX(50px); /* Desplazamiento a la derecha al hacer hover */
+  opacity: 100%;
+}
+
+
+
+@media (max-width:400px) {
+  
+  .container-bubble{
+    padding-left: 15vh;
+  }
 }
