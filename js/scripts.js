@@ -1,3 +1,6 @@
+//menu//
+
+
 
 //movimeinto ramdom//
 function moveImageRandomly(element) {
