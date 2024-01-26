@@ -26,11 +26,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.1/dist/Physics2DPlugin.min.js"></script>
+
+
+
+
+
     <!--animate css
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />-->
 
     <!--wow css-->
-    <link rel="stylesheet" href="./wow/wow.css">
+    <!-- <link rel="stylesheet" href="./wow/wow.css"> -->
 
     <!--css propio-->
     <link rel="stylesheet" href="./css/style.css">
@@ -41,69 +49,69 @@
     <header>
         <nav class="navbar navbar-dark " aria-label="First navbar example">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Never expand</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <a class="navbar-brand" href="#">Never expand</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-              <div class="navbar-collapse collapse" id="navbarsExample01" >
-                <ul class="navbar-nav me-auto mb-2">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                 
-                </ul>
-              </div>
+                <div class="navbar-collapse collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
     <section id="home" class="page-start">
-        <div class="container-bubble ">
-            <h2 id="displayText" class="display-text hello animate__animated "></h2>
+        <div class="container-bubble">
+            <h2 id="displayText" class="display-1 animate__animated"></h2>
             <img id="bubble1" class="image-not-focus image-not-focus--left" src="./images/bubble-1.svg" alt="">
             <img id="bubble2" class="image-not-focus image-not-focus--right" src="./images/bubble-2.svg" alt="">
         </div>
-
     </section>
     <section id="description">
         <div class="container text-center">
-            <div class="row ">
-                <div class="col col-lg-6 mx-auto animate__animated animate__fadeInUp animate__delay-2s">
-                    <h2> I'm Argel De Gante</h2>
+            <div class="row">
+                <div class="col col-lg-6 mx-auto animate__backInUp">
+                    <h2 class="js-indice-scroll"> I'm Argel De Gante</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 mx-auto animate__animated animate__fadeInUp animate__delay-3s">
-                    <p>
+                <div class="col-lg-6 mx-auto wow fadeInUp">
+                    <p class="js-indice-scroll">
                         My aim is to synergistically blend business strategy, clear usability, and
                         unique aesthetics to craft disruptive, intuitive,
                         and innovative products that reshape the technological market
                     </p>
                 </div>
             </div>
-            <div class="row ">
-                <div
-                    class="col col-lg-6 mx-auto text-center i-work wow fadeInUp">
-                    <h4>
+            <div class="row">
+                <div class="col col-lg-6 mx-auto text-center i-work wow fadeInUp">
+                    <h4 class="js-indice-scroll">
                         I work
                     </h4>
                 </div>
-                <div class="row justify-content-center mx-auto services">
-                    <div class=" col text-center animate__animated animate__fadeInUp animate__delay-5s animate__slow">
-                        <p>Branding</p>
+                <div class="row justify-content-center mx-auto services js-indice-scroll">
+                    <div class="col">
+                        <p class="text-center wow fadeInUp">Branding</p>
                     </div>
-                    <div class="col  text-center animate__animated animate__fadeInUp animate__delay-5s animate__slow">
-                        <p>UX / UI <br> Design</p>
+                    <div class="col">
+                        <p class="text-center wow fadeInUp">UX / UI <br> Design</p>
                     </div>
-                    <div class="col  text-center animate__animated animate__fadeInUp animate__delay-5s animate__slow">
-                        <p>Web <br> develoption</p>
+                    <div class="col">
+                        <p class="text-center wow fadeInUp">Web <br> develoption</p>
                     </div>
                 </div>
             </div>
@@ -113,23 +121,23 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col  text-center">
-                    <h2 class="display-text">Portafolio</h2>
+                <div class="col">
+                    <h2 class="display-text text-center js-indice-scroll">Portafolio</h2>
                 </div>
             </div>
-            <div class=" indice-link ">
+            <div class="indice-link">
                 <a class="indice-button" href="#">Gratud</a>
                 <p>UX / UI Design | Branding</p>
-                <img src="https://media0.giphy.com/media/FWqv0OMJFimL72Equd/giphy.webp"
-                    alt="Imagen 1" class="imagen-hover">
+                <img src="https://media0.giphy.com/media/FWqv0OMJFimL72Equd/giphy.webp" alt="Imagen 1"
+                    class="imagen-hover">
             </div>
-            <div class=" indice-link ">
+            <div class="indice-link">
                 <a class="indice-button" href="#">Kiiner</a>
                 <p>UX / UI Design | Branding</p>
                 <img src="https://images.unsplash.com/photo-1705518648497-e4ea72bcb27d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Imagen 1" class="imagen-hover">
             </div>
-            <div class=" indice-link ">
+            <div class="indice-link">
                 <a class="indice-button" href="#">Threat patrol</a>
                 <p>UX / UI Design | Branding</p>
                 <img src="https://images.unsplash.com/photo-1705518648497-e4ea72bcb27d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -140,19 +148,25 @@
     </section>
 
 
+    <div class="custom-cursor"></div>
+
     <!--js boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         Sintegrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
     <!--js wow-->
-    <script src="./js/wow.js"></script>
+    <!-- <script src="./wow/wow.js"></script>
     <script>
-    new WOW().init();
-    </script>
+        new WOW().init();
+        const argel = "argel"
+        console.log(argel)
+    </script> -->
 
     <!--script personal-->
     <script src="./js/scripts.js"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/bubbles.js"></script>
 </body>
 
 </html>
