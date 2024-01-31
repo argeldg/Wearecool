@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       return;
     }
-    gsap.to(cursor, { duration: 0.2, scale: 3, backgroundColor: "#00ff00" });
+    gsap.to(cursor, { duration: 0.2, scale: 3, backgroundColor: "#0325FF" });
   });
   // Por ejemplo, cambiar el tamaño del cursor al hacer clic
   document.addEventListener("mousedown", () => {

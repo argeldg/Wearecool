@@ -5,7 +5,7 @@
 }
 
 html {
-  --primary-blue: #4e7ae3;
+  --primary-blue: #0325FF;
 }
 
 body {
@@ -68,8 +68,8 @@ small,
 }
 
 .navbar-collapse a {
-  font-size: 5vh;
-  padding-left: 5%;
+  font-size: 10vh;
+  padding-left: 15%;
 }
 
 .navbar-toggler-icon {
@@ -80,12 +80,17 @@ small,
   background-image: var(--bs-navbar-toggler-icon-bg);
   background-position: center;
   background-size: 100%;
+  border: none !important;
+}
+
+.logo {
+  width: 50%;
 }
 
 /*display text*/
 .display-text {
   font-family: "Sora", sans-serif;
-  font-size: 3em;
+  font-size: 4em;
   color: #ffffff;
 }
 
@@ -133,14 +138,20 @@ section#home {
   background-image: url(../images/bubble-1.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 90vh;
+  background-size: 80vh;
 }
 
-@media (max-width: 433px) {
-  .container-bubble {
-    background-size: cover;
-  }
+.container-bubble-2 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  user-select: none;
 }
+
+
 
 .hello {
   align-content: center;
@@ -165,18 +176,12 @@ section#home {
   position: absolute;
   transition: left 0.2s ease-in-out, top 0.25s ease-in-out;
 }
+
 #bubble2 {
   position: absolute;
   transition: left 0.2s ease-in-out, top 0.25s ease-in-out;
 }
 
-.animate__animated {
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
 
 .animate__fadeIn {
   -webkit-animation-name: fadeIn;
@@ -237,7 +242,8 @@ section#home {
   margin-bottom: 10px;
   opacity: 75%;
   transition: all 0.3s ease;
-  z-index: 2; /* Transición suave al hacer hover */
+  z-index: 2;
+  /* Transición suave al hacer hover */
   padding-left: 10%;
   line-height: -10%;
 }
@@ -253,13 +259,27 @@ section#home {
 
 /* Estilo para resaltar el enlace al hacer hover */
 .indice-link:hover {
-  transform: translateX(50px); /* Desplazamiento a la derecha al hacer hover */
+  transform: translateX(50px);
+  /* Desplazamiento a la derecha al hacer hover */
   opacity: 100%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 776px) {
+
+  #bubble1{
+    width: 70vw;
+    height: auto;
+  }
+   
+  #bubble2{
+    width: 70vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 433px) {
   .container-bubble {
-    padding-left: 15vh;
+    background-size: cover;
   }
 }
 

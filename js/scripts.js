@@ -16,10 +16,10 @@ function mouseListener(elementName) {
   });
   element.addEventListener("mousemove", function (event) {
     moveImageRandomly(element);
-  });
+  });//
 }
-// mouseListener("bubble1");
-// mouseListener("bubble2");
+ mouseListener("bubble1");
+ mouseListener("bubble2");
 
 //Hello//
 const hello_options = [
