@@ -66,15 +66,20 @@ small,.text_small {
   width: 50%;
 }
 
+.gif{
+border-radius: 50%;
+max-width: 100vw;
+}
+
 /*display text*/
 .display-text {
-  font-size: 5em;
+  font-size: 4em;
   color: #ffffff;
 }
 
 /*button{
     color: #fff;
-    background-color: #0066cc00;
+    background-color:none !important;
     padding: 10px 30px;
     border: solid #ffffff 2px;
     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
@@ -207,11 +212,10 @@ section#home {
 /* Estilo para las imágenes (inicialmente ocultas) */
 .imagen-hover {
   display: none;
-  position: absolute;
-  top: 20px;
-  left: 35%;
+  top: -15%;
+  left: 25%;
   width: 40%;
-  height: 40%de;
+  height: auto;
   z-index: -1;
 }
 
@@ -235,6 +239,57 @@ section#home {
   position: absolute;
 }
 
+
+
+/*footer*/
+.py-3 {
+  padding-top: 4rem!important;
+  padding-bottom: 1rem!important;
+}
+.my-4 {
+  margin-top: 11.5rem!important;
+  margin-bottom: 5.5rem!important;
+}
+
+
+/*ABOUT ME*/
+.argel_pic{
+  width: 90%;
+  
+}
+
+.i-haved-worked{
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.form-control{
+  background-color: #fff0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+}
+
+#contact-me{
+  padding-top: 10%;
+}
+
+/*blog*/
+
+.bg-dark{
+  background-color: #0a0a0a !important;
+}
+
+/*portafolio*/
+
+.img-portada{
+  
+  width: 50% !important;
+}
+
+
 /* Estilo para resaltar el enlace al hacer hover */
 .indice-link:hover {
   transform: translateX(50px);
@@ -253,6 +308,10 @@ section#home {
     width: 70vw;
     height: auto;
   }
+
+  .float-end{
+      float:none !important;
+  }
 }
 
 @media (max-width: 433px) {
@@ -270,5 +329,6 @@ section#home {
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  filter: brightness(1.5);
+  filter:  brightness(1.5);
+  filter: blur(3.5px);
 }
